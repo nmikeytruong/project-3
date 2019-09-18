@@ -19,7 +19,7 @@ module.exports = function(app) {
     });
   });
   app.put("/api/profiles", function(req, res) {
-    db.Post.update(req.body, { where: { id: req.body.id } }).then(function(dbProfile) {
+    db.Profile.update(req.body, { where: { id: req.body.id } }).then(function(dbProfile) {
         res.json(dbProfile);
     });
   });
