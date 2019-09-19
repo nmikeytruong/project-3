@@ -15,7 +15,7 @@ module.exports = function(app) {
   app.get("/profile/:id", function(req, res) {
     db.Profile.findOne({ where: { id: req.params.id } }).then(function(dbProfile) {
       res.render("profile", {
-        post: dbProfile
+        profile: dbProfile
       });
     });
   });

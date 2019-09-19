@@ -14,10 +14,17 @@ module.exports = function(sequelize, DataTypes) {
           len: [1]
         }
       },
-      age: {
-        type: DataTypes.STRING
+      lookingFor: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          len: [1]
+        }
       },
       interests: {
+        type: DataTypes.TEXT
+      },
+      aboutMe: {
         type: DataTypes.TEXT
       }
     });
