@@ -1,14 +1,38 @@
 {
-  "name": "project-3",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "lint": "eslint --quiet .",
-    "fix": "eslint --fix .",
-    "test": "mocha"
+  "name": "socialmatch",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-modal": "^3.10.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.1"
   },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nmikeytruong/project-3.git"
@@ -16,23 +40,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "dotenv": "^8.1.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
-    "fs": "0.0.1-security",
-    "mocha": "^6.2.0",
-    "modal": "^1.2.0",
-    "mysql2": "^1.7.0",
-    "node": "^12.10.0",
-    "nodemon": "^1.19.2",
-    "prettier": "^1.18.2",
-    "sequelize": "^5.18.4",
-    "sequelize-sync": "^0.1.0"
-  },
   "bugs": {
     "url": "https://github.com/nmikeytruong/project-3/issues"
   },
-  "homepage": "https://github.com/nmikeytruong/project-3#readme",
-  "devDependencies": {}
+  "homepage": "https://github.com/nmikeytruong/project-3#readme"
 }
