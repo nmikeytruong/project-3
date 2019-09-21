@@ -3,7 +3,7 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 
-function Login() {
+function Register() {
   return (
     <div>
       <Container style={{ marginTop: 30 }}>
@@ -17,10 +17,11 @@ function Login() {
             <form>
                 <p><label for="Email">Email Address</label>
                 <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email"></input></p>
+                <p><label for="username">Username</label>
+                <input type="string" class="form-control" id="username-input" placeholder="Enter username"></input></p>
                 <p><label for="Password1">Password</label>
                 <input type="password" class="form-control" id="Password" placeholder="Password"></input></p>
-                <button type="submit" id="submit-login" class="btn btn-primary btn-lg btn-block">Login</button>
-                <p>or <a href="/register">Register</a></p>
+                <button type="submit" id="submit-register" class="btn btn-primary btn-lg btn-block">Regsiter</button>
             </form>
           </Col>
         </Row>
@@ -29,4 +30,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Register;
