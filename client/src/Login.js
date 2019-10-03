@@ -1,19 +1,19 @@
-import React, {useCallback, useContext} from 'react';
-import {withRouter, Redirect} from 'react-router';
-import {Link} from 'react-router-dom';
-import app from './base.js';
-import {AuthContext} from './Auth.js';
+import React, { useCallback, useContext } from "react";
+import { withRouter, Redirect } from "react-router";
+import { Link } from "react-router-dom";
+import app from "./base.js";
+import { AuthContext } from "./Auth.js";
 
-const SignIn = ({history}) => {
+const SignIn = ({ history }) => {
   const handleLog = useCallback(
     async event => {
       event.preventDefault();
-      const {email, password} = event.target.elements;
+      const { email, password } = event.target.elements;
       try {
         await app
           .auth()
-          .SignInWithEmailAndPassword(email.value, password.value);
-        history.push('/');
+          .signInWithEmailAndPassword(email.value, password.value);
+        history.push("/");
       } catch (err) {
         alert(err);
       }
@@ -21,7 +21,7 @@ const SignIn = ({history}) => {
     [history]
   );
 
-  const {currentUser} = useContext(AuthContext);
+  const { currentUser } = useContext(AuthContext);
 
   if (currentUser) {
     return <Redirect to="/" />;
@@ -33,19 +33,19 @@ const SignIn = ({history}) => {
       <h1 className="login">Sign in</h1>
       <form onSubmit={handleLog}>
         <label>
-          Email:{' '}
+          Email:{" "}
           <input name="email" type="email" placeholder="" className="email" />
-        </label>{' '}
+        </label>{" "}
         <label>
-          Password:{' '}
+          Password:{" "}
           <input
             name="password"
             type="password"
             placeholder=""
             className="password"
           />
-        </label>{' '}
-        <button type="submit">Log In </button>{' '}
+        </label>{" "}
+        <button type="submit">Log In </button>{" "}
         <Link to="/Register">Register</Link>
       </form>
     </div>
