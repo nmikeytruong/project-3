@@ -1,6 +1,6 @@
 const router = require("express").Router();
 
-const profilesController = require("../../controllers/profileController");
+const profilesController = require("../../controllers/profilesController");
 
 // Matches with "/api/profiles"
 router.route("/").get(profilesController.findAll);
