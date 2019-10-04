@@ -25,14 +25,14 @@ function Nav() {
           </li>
           <li className="nav-item">
             <Link
-              to="/profile"
+              to="/profiles"
               className={
-                window.location.pathname === '/profile'
+                window.location.pathname === '/profiles'
                   ? 'nav-link-active'
                   : 'nav-link'
               }
             >
-              Profile
+              Profiles
             </Link>
           </li>
         </ul>
