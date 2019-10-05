@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/nmikeytruong/project-3/issues"
   },
-  "homepage": "https://github.com/nmikeytruong/project-3#readme",
+  
   "devDependencies": {
     "concurrently": "^4.1.2",
     "nodemon": "^1.19.3"
