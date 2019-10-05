@@ -1,12 +1,12 @@
-import React from "react";
-import app from "./base";
-import Nav from "./components/Navbar";
-import "./home.css";
+import React from 'react';
+import app from './base';
+import EditProfile from './pages/EditProfile';
+import './home.css';
 
 const Home = () => {
   return (
     <>
-      <Nav/>
+      <EditProfile />
 
       {<button onClick={() => app.auth().signOut()}>Sign Out </button>}
     </>

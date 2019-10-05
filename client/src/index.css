@@ -6,7 +6,7 @@ body {
 .animated {
   text-align: center;
   font-size: 170px;
-  color: rgb(200, 255, 0);
+  color: white;
   font-family: 'Bangers', cursive;
   border-radius: 10px;
 }
