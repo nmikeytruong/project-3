@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://project3user:asdf1234@ds229078.mlab.com:29078/heroku_964h5x81",
+  process.env.MONGODB_URI || "mongodb://project3user:asdf1234@ds329058.mlab.com:29058/heroku_d1pxqlfz",
   {
     useCreateIndex: true,
     useNewUrlParser: true
