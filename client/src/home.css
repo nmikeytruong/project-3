@@ -1,3 +1,8 @@
 body {
     background-color: white;
 }
+button {
+    position: sticky;
+    margin-top: 100px;
+    width: 20%;
+}
