@@ -1,5 +1,5 @@
 const express = require("express");
-
+const cors = require("cors");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
@@ -13,6 +13,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.use(routes);
+app.use(cors());
 
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://project3user:asdf1234@ds329058.mlab.com:29058/heroku_d1pxqlfz",

@@ -112,7 +112,7 @@ class EditProfile extends Component {
                 Save Profile
               </FormBtn>
             </form>
-          </Col>
+          </Col>          
         </Row>
       </Container>
       

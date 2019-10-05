@@ -26,8 +26,8 @@ function MatchCard(props) {
           </li>
         </ul>
       </div>
-      <span onClick={() => props.deleteProfile(props.id)} className="remove">
-        𝘅
+      <span onClick={() => props.matchProfile(props._id)} className="match">
+        ☻
       </span>
     </div>
   );
